@@ -1,0 +1,52 @@
+{
+  "name": "tgfancy",
+  "version": "0.13.0",
+  "description": "A Fancy, Higher-Level Wrapper for Telegram Bot API",
+  "main": "lib/index.js",
+  "scripts": {
+    "doc": "jsdoc2md --files lib/client.js --template doc/api.hbs > doc/api.md",
+    "test": "grunt test",
+    "test-coverage": "NODE_ENV=testing istanbul cover _mocha --report lcovonly -- --exit -R spec test/test.*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GochoMugo/tgfancy.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "api"
+  ],
+  "author": "GochoMugo (www.gmugo.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GochoMugo/tgfancy/issues"
+  },
+  "homepage": "https://github.com/GochoMugo/tgfancy#readme",
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.4",
+    "node-emoji": "^1.8.1",
+    "node-telegram-bot-api": "^0.30.0",
+    "tg-resolve": "^1.3.1",
+    "ws": "^3.3.3"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-eslint": "^20.1.0",
+    "grunt-mocha-test": "^0.13.3",
+    "istanbul": "^0.4.5",
+    "jsdoc-to-markdown": "^3.0.3",
+    "load-grunt-tasks": "^3.5.2",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "request": "^2.83.0",
+    "should": "^13.1.3"
+  }
+}
